@@ -67,7 +67,7 @@ export default function Header() {
               </Link>
             ))}
             <Button size="sm" className="w-full">
-              Latest Album
+              Ultimo lanzamiento
             </Button>
           </nav>
         </div>

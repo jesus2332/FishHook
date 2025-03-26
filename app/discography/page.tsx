@@ -119,7 +119,7 @@ export default function DiscographyPage() {
 
   return (
     <div className="flex flex-col">
-    
+    p
       <section className="bg-muted py-16 md:py-24">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
@@ -134,16 +134,16 @@ export default function DiscographyPage() {
       {/* SSencillos */}
       <section className="py-16">
         <div className="container">
-          <Tabs defaultValue={years[0]} className="w-full">
+          <Tabs defaultValue={years[years.length - 1]} className="w-full">
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">Sencillos por Año</h2>
               <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
-                {years.map((year) => (
-                  <TabsTrigger key={year} value={year} className="text-sm">
-                    {year}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
+              {years.sort((a, b) => Number(b) - Number(a)).map((year) => (
+                <TabsTrigger key={year} value={year} className="text-sm">
+                  {year}
+                </TabsTrigger>
+              ))}
+            </TabsList>
             </div>
 
             {years.map((year) => (

@@ -1,5 +1,4 @@
 "use client"
-import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Play, Calendar, Music, Phone } from "lucide-react"
@@ -40,23 +39,18 @@ const fadeIn = {
 
 
 export default function Home() {
-  const [isMounted, setIsMounted] = useState(false)
   const slideData = [
     { src: "/fishhook_slides_1.jpg" },
     { src: "/fishhook_slides_2.jpg" },
-    { src: "/fishhook_slides_3.JPG" },
+    { src: "/fishhook_slides_3.jpg" },
     { src: "/fishhook_slides_4.jpg" },
   ]
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
 
-  if (!isMounted) return null
 
   return (
     <div className="flex flex-col">
-      <section className="hero-gradient relative flex min-h-[91vh] flex-col items-center justify-center text-center overflow-hidden">
+      <section className="bg-black relative flex min-h-[91vh] flex-col items-center justify-center text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Vortex
             particleCount={500}

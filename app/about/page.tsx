@@ -115,7 +115,7 @@ export default function AboutPage() {
                   className={`grid md:grid-cols-2 gap-8 items-center ${index % 2 !== 0 ? "md:grid-flow-dense" : ""}`}
                 >
                   <div className={`relative h-[600px] w-full rounded-lg overflow-hidden ${index % 2 !== 0 ? "md:order-2" : ""}`}>
-                    <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-top" />
+                    <Image src={member.image } alt={member.name} fill className="object-cover object-top" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                   </div>
 

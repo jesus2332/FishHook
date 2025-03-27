@@ -91,11 +91,6 @@
   }
 }
 
-.hero-gradient {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 .album-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

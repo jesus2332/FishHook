@@ -13,7 +13,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Fish Hook Band",
-  description: "Official website of Fish Hook, a rock band from Chihuahua, Mexico",
+  description: "Official website of Fish Hook, a rock band from Chihuahua, Mexico | Sitio oficial de Fish Hook, una banda de rock de Chihuahua, Mexico",
 }
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="es" className="dark">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <div className="relative flex min-h-screen flex-col">
           <Header/>

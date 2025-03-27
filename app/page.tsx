@@ -93,7 +93,7 @@ export default function Home() {
           >
             <motion.div variants={item}>
               <Link href="/discography">
-                <Button size="lg" className="group">
+                <Button size="lg" className="group cursor-pointer">
                   <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                   Escúchanos ahora
                 </Button>
@@ -102,7 +102,7 @@ export default function Home() {
             
             <motion.div variants={item}>
               <Link href="/events">
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" className="cursor-pointer">
                   <Calendar className="mr-2 h-4 w-4" />
                   Próximos eventos
                 </Button>
@@ -231,7 +231,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Integrantes de la banda */}
+      {/* IBreve info de los integrantes de la banda */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -260,7 +260,7 @@ export default function Home() {
           >
             {bandMembers.map((member, index) => (
               <motion.div key={index} variants={item}>
-                <Card className="overflow-hidden border-0 bg-card shadow-lg p-0">
+                <Card className="band-member-card overflow-hidden border-0 bg-card shadow-lg p-0">
                   <div className="relative h-96 w-full overflow-hidden">
                     <Image
                       src={member.image}

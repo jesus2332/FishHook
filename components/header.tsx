@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
 const routes = [
-  { href: "/", label: "Inicio" },
+  { href: "/", label: "Inicio"  },
   { href: "/about", label: "Nosotros"  },
   { href: "/discography", label: "Discografía" },
   { href: "/events", label: "Eventos" },
@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2" >
 
           <Image src="/fhletras.png" alt="Fish Hook" className="rounded-full" width={64} height={64}  />
         </Link>
@@ -35,6 +35,7 @@ export default function Header() {
             <Link
               key={route.href}
               href={route.href}
+              scroll= {true}
               className="text-sm font-medium transition-colors hover:text-primary"
             >
               {route.label}

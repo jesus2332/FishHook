@@ -42,7 +42,7 @@ export default function Home() {
   const slideData = [
     { src: "/fishhook_slides_1.jpg" },
     { src: "/fishhook_slides_2.jpg" },
-    { src: "/fishhook_slides_3.jpg" },
+    { src: "/fishhook_slides_5.jpg" },
     { src: "/fishhook_slides_4.jpg" },
   ]
 

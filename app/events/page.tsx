@@ -17,12 +17,12 @@ const floatingBackground =
 const events = [
   {
     id: 1,
-    title: "Panzoniza Fest",
-    date: "2025-03-29",
-    time: "9:00 PM",
-    location: "Estadio Universitario de la UACH",
-    image: "/events/panzoniza_post.jpg",
-    description: "Vive la magia de Fish Hook en el panzoniza fest!",
+    title: "Tocada en Sold Out Bar",
+    date: "2025-04-11",
+    time: "10:30 PM",
+    location: "Sold Out Bar, Chihuahua",
+    image: "/events/11abril.jpg",
+    description: "Disfruta del rock clásico en Sold Out Bar junto a Fish Hook",
     ticketLink: "",
     soldOut: false,
   },

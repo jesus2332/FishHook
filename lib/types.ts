@@ -17,13 +17,11 @@ export type Single = {
 
 
 export type Event = {
-    id: number;
+    id: string;
     title: string;
     date: string;
     time: string;
     location: string;
     image: string;
     description: string;
-    ticketLink: string;
-    soldOut: boolean;
   }

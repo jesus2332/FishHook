@@ -16,6 +16,9 @@ import {
   SiTidal,
   SiApplemusic,
 } from "react-icons/si";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+
 
 const singles: Single[] = [
   {
@@ -327,15 +330,14 @@ export default function DiscographyPage() {
             viewport={{ once: true }}
             className="mx-auto max-w-4xl"
           >
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/M0NsFtZuDr8?si=CGgTcQQA-C-GM-Yd"
-                title="Video musical de Fuego Eterno"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+           <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
+                <LiteYouTubeEmbed
+                  id="M0NsFtZuDr8" 
+                  title="Video musical de Diamond Heart"
+                  poster="maxresdefault"
+                  
+                />
+              </div>
           </motion.div>
         </div>
       </motion.section>

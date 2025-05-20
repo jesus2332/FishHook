@@ -1,9 +1,9 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
-
+import Image from "next/image";
 interface SlideData {
-  src: string; // Solo necesitamos la propiedad `src` para la imagen
+  src: string;
 }
 
 interface SlideProps {
@@ -89,16 +89,17 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                 : "none",
           }}
         >
-          <img
+          <Image
             className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
+            fill
             alt=""
             src={src}
             onLoad={imageLoaded}
-            loading="eager"
-            decoding="sync"
+            priority={index === 0 && current === 0} 
+            loading={index === 0 && current === 0 ? undefined : "lazy"}
           />
           {current === index && (
             <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />

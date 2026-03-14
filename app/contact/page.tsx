@@ -57,7 +57,7 @@ export default function ContactPage() {
     {
       name: "Spotify",
       icon: <FaSpotify className="h-8 w-8 text-green-600" />,
-      description: "Escucha nuestra música original en Spotify",
+      description: "Escucha nuestra música en Spotify",
       color: "bg-green-600",
       hoverColor: "hover:bg-green-700",
       textColor: "text-green-600",
